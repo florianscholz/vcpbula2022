@@ -2,53 +2,62 @@
 <p>In dieser Ansicht kannst du die verfügbaren Boxen, Kästen und Flaschen verwalten.</p>
 <h4>Bestände</h4>
 <table class="table">
-<tr>
-<th>Typ</th>
-<th colspan="2">Anzahl</th>
-</tr>
-<tr>
-<td>
-Boxen
-</td>
-<td>
-{{this.boxes}}
-</td>
-     <td>
-             <a href="/modifyBoxesOnStock/{{this.id}}/-1"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
-     /
-        <a href="/modifyBoxesOnStock/{{this.id}}/1"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
-     </td>
-</tr><tr>
-     <td>
-     Flaschen
-     </td>
-     <td>
-     {{this.bottles}}
-     </td>
-          <td>
-             <a href="/modifyBottlesOnStock/{{this.id}}/-1"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
-     /
-        <a href="/modifyBottlesOnStock/{{this.id}}/1"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
-          </td>
-     </tr>
-     <tr>
-     <td>
-     Kästen
-     </td>
-     <td>
-     {{this.crades}}
-     </td>
-     <td>
-             <a href="/modifyCradesOnStock/{{this.id}}/-1"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></a>
-     /
-        <a href="/modifyCradesOnStock/{{this.id}}/1"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
+    <tr>
+        <th>Typ</th>
+        <th colspan="2">Anzahl</th>
+    </tr>
+    <tr>
+        <td>
+            Boxen
+        </td>
+        <td>
+            {{this.boxes}}
+        </td>
+        <td>
+            <a href="/modifyBoxesOnStock/{{this.id}}/-1"><span class="glyphicon glyphicon-minus"
+                                                               aria-hidden="true"></span></a>
+            /
+            <a href="/modifyBoxesOnStock/{{this.id}}/1"><span class="glyphicon glyphicon-plus"
+                                                              aria-hidden="true"></span></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            Flaschen
+        </td>
+        <td>
+            {{this.bottles}}
+        </td>
+        <td>
+            <a href="/modifyBottlesOnStock/{{this.id}}/-1"><span class="glyphicon glyphicon-minus"
+                                                                 aria-hidden="true"></span></a>
+            /
+            <a href="/modifyBottlesOnStock/{{this.id}}/1"><span class="glyphicon glyphicon-plus"
+                                                                aria-hidden="true"></span></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            Kästen
+        </td>
+        <td>
+            {{this.crades}}
+        </td>
+        <td>
+            <a href="/modifyCradesOnStock/{{this.id}}/-1"><span class="glyphicon glyphicon-minus"
+                                                                aria-hidden="true"></span></a>
+            /
+            <a href="/modifyCradesOnStock/{{this.id}}/1"><span class="glyphicon glyphicon-plus"
+                                                               aria-hidden="true"></span></a>
 
-     </td>
-     </tr>
+        </td>
+    </tr>
 </table>
 
-        <p>Mit dem folgenden Link kannst Du eine Gruppe löschen. Bitte sei dir bewusst, dass die Gruppe sofort entfernt wird - es wird keine Bestätigung abgefragt.
-  </p>
-          <a class="text-danger" href="/removeGroup/{{this.id}}"><span class="glyphicon glyphicon-remove-sign" aria-hidden="true"></span>&nbsp;Gruppe entfernen</a><br />
-<hr />
-        <a href="/">Zurück zur Übersicht</a>
+<p>Mit dem folgenden Link kannst Du eine Gruppe löschen. Bitte sei dir bewusst, dass die Gruppe sofort entfernt wird -
+    es wird keine Bestätigung abgefragt.
+</p>
+<a class="text-danger" href="/removeGroup/{{this.id}}"><span class="glyphicon glyphicon-remove-sign"
+                                                             aria-hidden="true"></span>&nbsp;Gruppe entfernen</a><br/>
+<hr/>
+<a href="/">Zurück zur Übersicht</a>

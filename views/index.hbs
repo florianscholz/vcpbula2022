@@ -1,40 +1,40 @@
-   <p>Im folgenden kannst Du die Liste aller Kochgruppen einsehen und die Bestände editieren.</p>
-  <table class="table">
-  <tr>
-  <th>
-    Gruppenname
-  </th>
-  <th>
-    Anzahl Flaschen
-  </th>
-    <th>
-      Anzahl Boxen
-    </th>
+<p>Im folgenden kannst Du die Liste aller Kochgruppen einsehen und die Bestände editieren.</p>
+<table class="table">
+    <tr>
         <th>
-          Anzahl Kästen
+            Gruppenname
+        </th>
+        <th>
+            Anzahl Flaschen
+        </th>
+        <th>
+            Anzahl Boxen
+        </th>
+        <th>
+            Anzahl Kästen
         </th>
         <th>
 
         </th>
-  </tr>
-{{#each data}}
-<tr>
-  <td>{{this.name}}</td>
-  <td>{{this.bottles}}</td>
-    <td>{{this.boxes}}</td>
-      <td>{{this.crades}}</td>
-      <td>
+    </tr>
+    {{#each data}}
+        <tr>
+            <td>{{this.name}}</td>
+            <td>{{this.bottles}}</td>
+            <td>{{this.boxes}}</td>
+            <td>{{this.crades}}</td>
+            <td>
 
-        <a href="/editGroup/{{this.id}}">Bestände verwalten</a>
-  </tr>
-  {{/each}}
-  </table>
-  <hr />
-  <h3>Neue Gruppe anlegen</h3>
-  <form method="GET" action="addGroup">
-  <div class="form-group">
-    <label for="exampleInputEmail1">Gruppenname</label>
-    <input type="text" class="form-control" name="groupName" placeholder="Kochgruppe">
-  </div>
-  <input type="submit" class="btn btn-default" value="Kochgruppe anlegen"></input>
-    </form>
+                <a href="/editGroup/{{this.id}}">Bestände verwalten</a>
+        </tr>
+    {{/each}}
+</table>
+<hr/>
+<h3>Neue Gruppe anlegen</h3>
+<form method="GET" action="addGroup">
+    <div class="form-group">
+        <label for="exampleInputEmail1">Gruppenname</label>
+        <input type="text" class="form-control" name="groupName" placeholder="Kochgruppe">
+    </div>
+    <input type="submit" class="btn btn-default" value="Kochgruppe anlegen"></input>
+</form>
