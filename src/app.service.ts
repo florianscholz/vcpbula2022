@@ -40,9 +40,9 @@ export class AppService {
   async getInventory() {
     return await this.stockRepository.find();
   }
-
+/*
   async remove(id: number) {
     return await this.stockRepository.delete({id: id});
   }
-
+*/
 }

@@ -61,6 +61,7 @@ export class AppController {
     await this.appService.create({ boxes: 0, crades: 0, bottles: 0, name: groupName, id: null });
     return await res.redirect('/');
   }
+  /*
   @Get('removeGroup/:id')
   async removeGroup(
       @Param('id') id: string,
@@ -69,4 +70,5 @@ export class AppController {
     await this.appService.remove(+id);
     return await res.redirect('/');
   }
+  */
 }
